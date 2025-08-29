@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zubair Akbar — CV</title>
+  <style>
+    :root {
+      --bg: #0b0e14;
+      --card: #121723;
+      --text: #eaeef7;
+      --muted: #9aa3b2;
+      --accent: #7aa2f7;
+      --line: #1f2633;
+      --chip: #162033;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif;
+      background: var(--bg); color: var(--text); line-height: 1.6;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { max-width: 980px; margin: 0 auto; padding: 24px; }
+    header {
+      display: flex; align-items: center; justify-content: space-between;
+      border-bottom: 1px solid var(--line); padding-bottom: 16px; margin-bottom: 24px;
+    }
+    nav a { margin-left: 16px; font-size: 14px; color: var(--muted); }
+    h1 { margin: 0; font-size: 28px; }
+    .muted { color: var(--muted); }
+    .card {
+      background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+      padding: 20px; margin-bottom: 16px; box-shadow: 0 0 0 1px rgba(0,0,0,0.12), 0 8px 24px rgba(0,0,0,0.24);
+    }
+    h2 { margin: 0 0 10px 0; font-size: 20px; }
+    h3 { margin: 0 0 6px 0; font-size: 16px; }
+    .row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    @media (max-width: 800px) { .row { grid-template-columns: 1fr; } }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+    .chip {
+      border: 1px solid var(--line); background: var(--chip); color: var(--text);
+      padding: 6px 10px; border-radius: 999px; font-size: 12px;
+    }
+    .kv { display: flex; flex-wrap: wrap; gap: 12px; font-size: 14px; }
+    .kv span { color: var(--muted); }
+    footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+    .two-col { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 16px; }
+    @media (max-width: 900px) { .two-col { grid-template-columns: 1fr; } }
+    .list { margin: 0; padding-left: 18px; }
+    .list li { margin: 8px 0; }
+    .small { font-size: 13px; color: var(--muted); }
+    .btn {
+      display: inline-block; padding: 8px 12px; border-radius: 8px; border: 1px solid var(--line);
+      background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(0,0,0,0.08));
+      color: var(--text); font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <h1>Zubair Akbar</h1>
+        <div class="kv">
+          <div>Multan, Punjab, Pakistan</div>
+          <span>•</span>
+          <div><a href="mailto:zobikakr96@gmail.com">zobikakr96@gmail.com</a> / <a href="mailto:zubair@siat.ac.cn">zubair@siat.ac.cn</a></div>
+          <span>•</span>
+          <div><a href="https://github.com/zobi-logs" target="_blank" rel="noopener">github.com/zobi-logs</a></div>
+          <span>•</span>
+          <div>WhatsApp: +92 302 2708224</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#service">Service</a>
+      </nav>
+    </header>
+
+    <section id="about" class="card">
+      <h2>Profile / Objective</h2>
+      <p>PhD researcher in AI/ML and health informatics (sleep &amp; bioinformatics), specializing in multimodal physiological signal analysis and LLM‑powered agentic systems. Seeking roles to build clinically useful, research‑grade AI systems (RAG, time‑series models, and explainable ML) and collaborate across academia and industry.</p>
+      
+    </section>
+
+    <div class="two-col">
+      <section id="education" class="card">
+        <h2>Education</h2>
+        <ul class="list">
+          <li><strong>MSCS</strong>, Air University Islamabad, Pakistan (2019–2021) — CGPA 3.56/4.0, Silver Medalist</li>
+          <li><strong>MCS</strong>, Air University Islamabad, Pakistan (2017–2019) — CGPA 3.22/4.0, 1st Division</li>
+          <li><strong>BSc</strong>, Bahauddin Zakariya University Multan, Pakistan (2015–2017) — 2nd Division</li>
+          <li><strong>ICS</strong>, BISE Multan, Pakistan (2013–2015) — 1st Division</li>
+          <li><strong>Matric (Science)</strong>, BISE Multan, Pakistan (2011–2013) — 1st Division</li>
+        </ul>
+      </section>
+
+      <section id="experience" class="card">
+        <h2>Research &amp; Professional Experience</h2>
+        <h3>PhD Researcher (3rd year)</h3>
+        <div class="small">Shenzhen Institute of Advanced Technology (SIAT), Chinese Academy of Sciences</div>
+        <ul class="list">
+          <li>Deep learning for sleep staging &amp; arousal detection (EEG/PPG/EDA/ACC/TEMP).</li>
+          <li>RAG + multi‑agent LLM systems for personalized health summaries and anomaly detection.</li>
+          <li>Open‑sourced reproducible code and clinical evaluation collaboration.</li>
+        </ul>
+        <h3>Teaching Assistant (Jan 2021 – Jul 2021)</h3>
+        <div class="small">Dept. of Computer Science &amp; Engineering, Air University, Pakistan (<a href="https://aumc.edu.pk" target="_blank" rel="noopener">aumc.edu.pk</a>)</div>
+        <ul class="list">
+          <li>Assisted in teaching introductory programming and supervised labs.</li>
+          <li>Supported assessments, grading, and student mentoring.</li>
+        </ul>
+      </section>
+    </div>
+
+    <section id="skills" class="card">
+      <h2>Technical Skills</h2>
+      <div class="row">
+        <div>
+          <h3>AI &amp; Machine Learning</h3>
+          <div class="chips">
+            <span class="chip">PyTorch</span><span class="chip">TensorFlow</span><span class="chip">scikit‑learn</span>
+            <span class="chip">CNN</span><span class="chip">ViT</span><span class="chip">Transformers</span>
+            <span class="chip">Time‑series</span><span class="chip">SHAP</span>
+          </div>
+        </div>
+        <div>
+          <h3>LLMs, Agentic AI &amp; RAG</h3>
+          <div class="chips">
+            <span class="chip">LangChain</span><span class="chip">LangGraph</span><span class="chip">LangSmith</span>
+            <span class="chip">CrewAI</span><span class="chip">FAISS</span><span class="chip">LoRA/QLoRA</span><span class="chip">PEFT</span>
+          </div>
+        </div>
+        <div>
+          <h3>Programming &amp; Data</h3>
+          <div class="chips">
+            <span class="chip">Python</span><span class="chip">C/C++</span><span class="chip">SQL</span>
+            <span class="chip">Pandas</span><span class="chip">NumPy</span><span class="chip">Matplotlib</span>
+          </div>
+        </div>
+        <div>
+          <h3>Web/DevOps &amp; Tools</h3>
+          <div class="chips">
+            <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span><span class="chip">PHP</span>
+            <span class="chip">Git</span><span class="chip">Docker</span><span class="chip">Anaconda</span><span class="chip">PyCharm</span>
+            <span class="chip">MATLAB</span><span class="chip">Weka</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="card">
+      <h2>Selected Projects</h2>
+      <ul class="list">
+        <li><a href="https://github.com/zobi-logs/Apnea_LLM" target="_blank" rel="noopener">Apnea_LLM</a></li>
+        <li><a href="https://github.com/zobi-logs/Covid19_pakistan_analysis" target="_blank" rel="noopener">Covid19 Pakistan Analysis</a></li>
+        <li><a href="https://github.com/zobi-logs/kaleep-net" target="_blank" rel="noopener">Kaleep‑Net</a></li>
+        <li><a href="https://github.com/zobi-logs/Sleep_Specialist_Chat_Assistant" target="_blank" rel="noopener">Sleep Specialist Chat Assistant</a></li>
+        <li><a href="https://github.com/zobi-logs/agentic_ai_researcher" target="_blank" rel="noopener">Agentic AI Researcher</a></li>
+      </ul>
+    </section>
+
+    <section id="publications" class="card">
+      <h2>Publications</h2>
+      <ul class="list">
+        <li>Hassan et al., "MuFuBP-Net: A Multimodal Fusion Network for Cuffless Blood Pressure Estimation Using Dual-Feature Pipeline with Probabilistic Feature Encoder," <em>IEEE Journal of Biomedical and Health Informatics</em>doi: 10.1109/JBHI.2025.3563852</li>
+        <li>Akbar, Z.; Razzaq, K.; Murtaza, F.; Hassan, F. “Using Data Mining Technique to Measure the Impact of COVID‑19 1st Wave on the Stock Market of Top Fifteen Affected Countries.” <em>LGURJCSIT</em> 5(2), 12–19, 2021.</li>
+        <li>Hassan, F.; Akbar, Z.; Irtaza, G.; Murtaza, F.; Hassan, J.; Wardah, M. “Effect of Hyperparameter Optimization Technique to Extract the Nuclei from the Cell.” <em>14th International Conference on Open Source Systems and Technologies</em>, 2020.</li>
+      </ul>
+    </section>
+
+    <section id="service" class="card">
+      <h2>Professional Service &amp; Achievements</h2>
+      <ul class="list">
+        <li>Peer Reviewer: IEEE TIM; IEEE Sensors Journal; international conferences.</li>
+        <li>Full tuition scholarship for MCS and MSCS (HEC Pakistan).</li>
+        <li>Laptop award by the Prime Minister of Pakistan (Master’s).</li>
+        <li>Top‑3 rank in MCS and MSCS.</li>
+        <li>Graduate Member, IEEE.</li>
+      </ul>
+    </section>
+
+    <footer>
+      &copy; 2025 Zubair Akbar.
+    </footer>
+  </div>
+</body>
+</html>
